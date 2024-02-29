@@ -225,6 +225,8 @@ Response Parameter
 |proxy.is_spammer|boolean|Email and forum spammers.|
 |proxy.is_scanner|boolean|Network security scanners.|
 |proxy.is_botnet|boolean|Malware infected devices.|
+|proxy.is_consumer_privacy_network|boolean|Consumer Privacy Networks.|
+|proxy.is_enterprise_private_network|boolean|Enterprise Private Networks.|
 
 ```json
 {
@@ -330,6 +332,8 @@ Response Parameter
     "is_web_proxy": false,
     "is_web_crawler": false,
     "is_residential_proxy": false,
+    "is_consumer_privacy_network":false,
+    "is_enterprise_private_network":false,
     "is_spammer": false,
     "is_scanner": false,
     "is_botnet": false
