@@ -8,6 +8,7 @@ object Main {
             // Configures IP2Location.io API key
             val config = Configuration()
             val apiKey = "YOUR_API_KEY"
+
             config.apiKey = apiKey
             val ipl = IPGeolocation(config)
 
@@ -37,6 +38,18 @@ object Main {
 
             // Get domain extension (gTLD or ccTLD) from URL or domain name
             println(whois.toDomainExtension("example.com"))
+
+            val hd = HostedDomain(config)
+
+            // Lookup ip address hosted domains data
+            val myObj3: JsonObject = runBlocking {
+                hd.lookup(
+                    "8.8.8.8", 1
+                )
+            } // the language parameter is only available for Plus and Security plans
+
+            println(myObj3)
+
         } catch (e: Exception) {
             println(e)
             //e.printStackTrace(System.out)
