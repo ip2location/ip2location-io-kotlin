@@ -1,5 +1,7 @@
-import com.google.gson.*
-import kotlinx.coroutines.*
+package com.ip2location
+
+import com.google.gson.JsonObject
+import com.google.gson.JsonParser
 import kotlinx.coroutines.future.await
 import java.net.IDN
 import java.net.URI
@@ -8,16 +10,15 @@ import java.net.URLEncoder
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
 import java.net.http.HttpResponse
-import java.util.*
 
 /**
  * This class performs the lookup of WHOIS data from a domain by querying the IP2WHOIS API.
  *
  *
- * Copyright (c) 2002-2025 IP2Location.com
+ * Copyright (c) 2002-2026 IP2Location.com
  *
  * @author IP2Location.com
- * @version 1.1.0
+ * @version 1.2.0
  */
 class DomainWhois
 /**

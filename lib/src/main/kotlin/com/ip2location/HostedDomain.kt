@@ -1,5 +1,7 @@
-import com.google.gson.*
-import kotlinx.coroutines.*
+package com.ip2location
+
+import com.google.gson.JsonObject
+import com.google.gson.JsonParser
 import kotlinx.coroutines.future.await
 import java.net.URI
 import java.net.URLEncoder
@@ -11,10 +13,10 @@ import java.net.http.HttpResponse
  * This class performs the lookup of hosted domains data from an IP address by querying the IP2Location.io API.
  *
  *
- * Copyright (c) 2002-2025 IP2Location.com
+ * Copyright (c) 2002-2026 IP2Location.com
  *
  * @author IP2Location.com
- * @version 1.1.0
+ * @version 1.2.0
  */
 class HostedDomain
 /**
